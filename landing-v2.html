@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO: tiêu đề & mô tả tối ưu từ khóa -->
+  <title>BS. Trần Huyền Trang — Chuyên gia Suy Giãn Tĩnh Mạch & Tim Mạch · Hà Nội</title>
+  <meta name="description" content="BS. Trần Huyền Trang, 10+ năm chuyên khoa Tĩnh mạch & Tim mạch tại BV Đại học Y Hà Nội. Tư vấn miễn phí 1:1: chẩn đoán chính xác, phác đồ cá nhân hóa, can thiệp xâm lấn tối thiểu." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://bshuyentrang.com/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bshuyentrang.com/" />
+  <meta property="og:title" content="BS. Trần Huyền Trang — Chuyên gia Suy Giãn Tĩnh Mạch · Tư vấn miễn phí" />
+  <meta property="og:description" content="Chân nặng, đau mỏi, nổi gân xanh? Đặt lịch tư vấn miễn phí 1:1 với chuyên gia tĩnh mạch hàng đầu Hà Nội." />
+  <meta property="og:image" content="Bshuyentrang.png" />
+
+  <!-- Schema.org: Physician -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "BS. Trần Huyền Trang",
+    "description": "Chuyên gia Tĩnh mạch & Tim mạch, Suy giãn tĩnh mạch, can thiệp xâm lấn tối thiểu",
+    "telephone": "0919911593",
+    "email": "trangkien07@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "159B Lê Thanh Nghị",
+      "addressLocality": "Hai Bà Trưng",
+      "addressRegion": "Hà Nội",
+      "addressCountry": "VN"
+    },
+    "medicalSpecialty": "Cardiology",
+    "worksFor": [
+      { "@type": "Hospital", "name": "Bệnh viện Đại học Y Hà Nội" },
+      { "@type": "MedicalClinic", "name": "PK ABClinic" }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── DESIGN TOKENS ───────────────────────────────────────────── */
+    :root {
+      --navy:      #1B2A4A;
+      --navy-deep: #111D33;
+      --gold:      #C9A84C;
+      --gold-light:#E8D49A;
+      --cream:     #F8F5EF;
+      --white:     #FFFFFF;
+      --text:      #2C2C2C;
+      --text-soft: #5A5A5A;
+      --border:    #E0D8CC;
+
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body:    'Inter', system-ui, sans-serif;
+
+      --radius:    12px;
+      --radius-sm: 6px;
+      --shadow:    0 4px 24px rgba(27,42,74,0.10);
+      --shadow-lg: 0 8px 40px rgba(27,42,74,0.16);
+
+      --max-w:        780px;
+      --section-pad:  80px 20px;
+    }
+
+    /* ─── RESET ───────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    /* Skip to content — accessibility */
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 4px;
+      background: var(--gold);
+      color: var(--navy-deep);
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 4px;
+      z-index: 9999;
+    }
+    .skip-link:focus { left: 4px; }
+
+    /* ─── UTILITIES ───────────────────────────────────────────────── */
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .gold-line {
+      width: 48px; height: 3px;
+      background: var(--gold);
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    /* ─── STICKY NAV ──────────────────────────────────────────────── */
+    .topbar {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--navy);
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .topbar-name {
+      font-family: var(--font-display);
+      color: var(--gold-light);
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .topbar-phone {
+      display: none;
+      color: rgba(255,255,255,0.75);
+      font-size: 13px;
+    }
+    .topbar-cta {
+      background: var(--gold);
+      color: var(--navy-deep);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 50px;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .topbar-cta:hover { background: var(--gold-light); }
+
+    /* ─── SOCIAL PROOF BAR (new) ──────────────────────────────────── */
+    .social-bar {
+      background: var(--gold);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .social-stat {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--navy-deep);
+    }
+    .social-stat strong { font-size: 16px; }
+
+    /* ─── HERO ────────────────────────────────────────────────────── */
+    .hero {
+      background: linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 100%);
+      color: var(--white);
+      padding: 72px 20px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 80% 30%, rgba(201,168,76,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      position: relative;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(201,168,76,0.15);
+      border: 1px solid rgba(201,168,76,0.35);
+      border-radius: 50px;
+      padding: 6px 14px;
+      font-size: 12px;
+      color: var(--gold-light);
+      letter-spacing: 0.06em;
+      font-weight: 500;
+      margin-bottom: 28px;
+    }
+    .hero-badge span { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(26px, 5vw, 40px);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      color: var(--white);
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--gold-light);
+    }
+    .hero-sub {
+      font-size: clamp(15px, 2.5vw, 17px);
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 32px;
+      max-width: 580px;
+    }
+    .trust-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+    .trust-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: var(--radius-sm);
+      padding: 9px 14px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.90);
+    }
+    .trust-pill .check {
+      color: var(--gold);
+      font-size: 15px;
+      flex-shrink: 0;
+    }
+    .hero-cta-wrap { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .btn-primary {
+      background: var(--gold);
+      color: var(--navy-deep);
+      font-weight: 700;
+      font-size: 15px;
+      padding: 15px 32px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.18s, box-shadow 0.18s;
+      box-shadow: 0 4px 20px rgba(201,168,76,0.40);
+      display: inline-block;
+      text-align: center;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(201,168,76,0.50); }
+    .hero-note { font-size: 12px; color: rgba(255,255,255,0.50); }
+
+    /* Doctor card inside hero */
+    .doctor-card {
+      margin-top: 52px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .doctor-card img {
+      width: 70px; height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--gold);
+      flex-shrink: 0;
+    }
+    .doctor-card-info h3 {
+      font-family: var(--font-display);
+      font-size: 17px;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .doctor-card-info p {
+      font-size: 12.5px;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.5;
+    }
+
+    /* ─── PROBLEM ─────────────────────────────────────────────────── */
+    .problem {
+      padding: var(--section-pad);
+      background: var(--white);
+    }
+    .problem h2 {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 4vw, 28px);
+      color: var(--navy);
+      margin-bottom: 20px;
+      line-height: 1.35;
+    }
+    .problem p { color: var(--text-soft); margin-bottom: 16px; }
+    .problem strong { color: var(--text); }
+
+    .tried-list {
+      list-style: none;
+      margin: 28px 0 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .tried-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14.5px;
+      color: var(--text-soft);
+      background: var(--cream);
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+      border-left: 3px solid var(--border);
+    }
+    .tried-list li .x {
+      color: #C0392B;
+      font-size: 16px;
+      flex-shrink: 0;
+      line-height: 1.5;
+    }
+
+    .story-heading {
+      font-family: var(--font-display);
+      font-size: 18px;
+      color: var(--navy);
+      margin: 40px 0 20px;
+    }
+    .story-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .story-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      background: var(--cream);
+    }
+    .story-card p { font-size: 14.5px; color: var(--text-soft); line-height: 1.65; }
+    .story-card strong { color: var(--navy); }
+
+    .callout {
+      margin-top: 28px;
+      background: var(--navy);
+      color: var(--white);
+      border-radius: var(--radius);
+      padding: 22px 26px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .callout strong { color: var(--gold-light); }
+
+    /* ─── PROCESS ─────────────────────────────────────────────────── */
+    .process {
+      padding: var(--section-pad);
+      background: var(--cream);
+    }
+    .process h2 {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 4vw, 28px);
+      color: var(--navy);
+      margin-bottom: 40px;
+      line-height: 1.35;
+    }
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+    }
+    .steps::before {
+      content: '';
+      position: absolute;
+      left: 22px; top: 44px; bottom: 44px;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--gold), rgba(201,168,76,0.15));
+    }
+    .step {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      padding: 20px 0;
+      position: relative;
+    }
+    .step-num {
+      width: 44px; height: 44px;
+      background: var(--navy);
+      color: var(--gold);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 16px;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+      border: 2px solid var(--gold);
+    }
+    .step-body h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .step-body p { font-size: 14px; color: var(--text-soft); }
+    .step-body .tag {
+      display: inline-block;
+      background: rgba(201,168,76,0.15);
+      color: #8B6914;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 50px;
+      margin-top: 8px;
+    }
+
+    /* ─── EVIDENCE ────────────────────────────────────────────────── */
+    .evidence {
+      padding: var(--section-pad);
+      background: var(--white);
+    }
+    .evidence h2 {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 4vw, 28px);
+      color: var(--navy);
+      margin-bottom: 36px;
+    }
+    .cases {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .case-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--cream);
+      box-shadow: var(--shadow);
+    }
+    .case-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .case-img-wrap { position: relative; }
+    .case-img-wrap img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      display: block;
+      /* lazy loading handled via attribute */
+    }
+    .img-label {
+      position: absolute;
+      bottom: 8px; left: 8px;
+      background: rgba(0,0,0,0.65);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    .img-label.after { background: rgba(27,42,74,0.85); color: var(--gold-light); }
+    .case-body { padding: 20px 22px; }
+    .case-portrait { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; object-position: top; border: 2px solid var(--gold); margin-bottom: 12px; }
+    .case-name {
+      font-weight: 700;
+      color: var(--navy);
+      font-size: 15px;
+      margin-bottom: 2px;
+    }
+    .case-role {
+      font-size: 12px;
+      color: var(--text-soft);
+      margin-bottom: 12px;
+    }
+    .case-body p { font-size: 13.5px; color: var(--text-soft); line-height: 1.6; }
+    .case-quote {
+      margin-top: 12px;
+      border-left: 3px solid var(--gold);
+      padding-left: 12px;
+      font-size: 13.5px;
+      color: var(--navy);
+      font-style: italic;
+    }
+
+    /* ─── FAQ ─────────────────────────────────────────────────────── */
+    .faq {
+      padding: var(--section-pad);
+      background: var(--cream);
+    }
+    .faq h2 {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 4vw, 28px);
+      color: var(--navy);
+      margin-bottom: 32px;
+    }
+    .faq-list { display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .faq-q {
+      width: 100%; text-align: left;
+      background: none; border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 20px;
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--navy);
+      font-family: var(--font-body);
+      gap: 12px;
+    }
+    .faq-q .arrow {
+      flex-shrink: 0;
+      width: 24px; height: 24px;
+      border-radius: 50%;
+      background: var(--cream);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+      color: var(--navy);
+      transition: transform 0.25s;
+    }
+    .faq-item.open .arrow { transform: rotate(180deg); }
+    .faq-a {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.3s ease;
+    }
+    .faq-a-inner {
+      overflow: hidden;
+      padding: 0 20px;
+    }
+    .faq-item.open .faq-a { grid-template-rows: 1fr; }
+    .faq-item.open .faq-a-inner { padding: 0 20px 18px; }
+    .faq-a-inner p {
+      font-size: 14px;
+      color: var(--text-soft);
+      line-height: 1.7;
+    }
+
+    /* ─── BOOKING FORM (new) ──────────────────────────────────────── */
+    .booking {
+      padding: var(--section-pad);
+      background: var(--white);
+    }
+    .booking h2 {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 4vw, 28px);
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .booking-sub {
+      font-size: 14.5px;
+      color: var(--text-soft);
+      margin-bottom: 32px;
+    }
+    .booking-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .form-group label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .form-group label .req { color: #C0392B; margin-left: 2px; }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 11px 14px;
+      font-size: 14px;
+      font-family: var(--font-body);
+      color: var(--text);
+      background: var(--cream);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      width: 100%;
+      appearance: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(201,168,76,0.15);
+      background: var(--white);
+    }
+    .form-group textarea { resize: vertical; min-height: 90px; }
+    .form-group select { cursor: pointer; }
+    .form-note {
+      font-size: 12px;
+      color: var(--text-soft);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .form-note svg { flex-shrink: 0; }
+    .btn-submit {
+      background: var(--navy);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 15px;
+      padding: 16px 32px;
+      border-radius: 50px;
+      border: 2px solid var(--navy);
+      cursor: pointer;
+      transition: background 0.2s, transform 0.18s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+    }
+    .btn-submit:hover {
+      background: var(--navy-deep);
+      transform: translateY(-1px);
+    }
+    .btn-submit:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* ─── CTA FOOTER ──────────────────────────────────────────────── */
+    .cta-section {
+      background: linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 100%);
+      padding: 72px 20px 80px;
+      text-align: center;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 50% 70% at 50% 0%, rgba(201,168,76,0.14) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cta-section h2 {
+      font-family: var(--font-display);
+      font-size: clamp(22px, 4vw, 32px);
+      max-width: 540px;
+      margin: 0 auto 24px;
+      line-height: 1.3;
+      position: relative;
+    }
+    .commitments {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 36px;
+      position: relative;
+    }
+    .commitment {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 50px;
+      padding: 8px 16px;
+      font-size: 13px;
+      display: flex; align-items: center; gap: 7px;
+    }
+    .commitment .check { color: var(--gold); }
+    .btn-primary-lg {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy-deep);
+      font-weight: 700;
+      font-size: 16px;
+      padding: 18px 40px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 6px 28px rgba(201,168,76,0.50);
+      transition: transform 0.18s, box-shadow 0.18s;
+      position: relative;
+    }
+    .btn-primary-lg:hover { transform: translateY(-2px); box-shadow: 0 10px 36px rgba(201,168,76,0.60); }
+
+    .contact-grid {
+      margin-top: 44px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      position: relative;
+    }
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 13.5px;
+    }
+    .contact-item .icon {
+      width: 32px; height: 32px;
+      background: rgba(255,255,255,0.10);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 15px;
+      flex-shrink: 0;
+    }
+    .contact-item-label {
+      font-size: 11px;
+      color: rgba(255,255,255,0.50);
+      margin-bottom: 2px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .contact-item-val {
+      color: rgba(255,255,255,0.90);
+      font-weight: 500;
+    }
+
+    /* ─── FLOATING ZALO BUTTON (new) ─────────────────────────────── */
+    .fab-zalo {
+      position: fixed;
+      bottom: 24px; right: 20px;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #0068FF;
+      color: #fff;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 12px 18px 12px 14px;
+      border-radius: 50px;
+      box-shadow: 0 4px 20px rgba(0,104,255,0.40);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+    }
+    .fab-zalo:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,104,255,0.50); }
+    .fab-zalo img { width: 22px; height: 22px; }
+    /* pulse ring */
+    .fab-zalo::before {
+      content: '';
+      position: absolute;
+      inset: -6px;
+      border-radius: 50px;
+      border: 2px solid rgba(0,104,255,0.4);
+      animation: pulse-ring 2s ease-out infinite;
+    }
+    @keyframes pulse-ring {
+      0%   { transform: scale(1);   opacity: 0.8; }
+      100% { transform: scale(1.12); opacity: 0; }
+    }
+
+    /* ─── RESPONSIVE ──────────────────────────────────────────────── */
+    @media (min-width: 520px) {
+      .topbar-phone { display: block; }
+    }
+    @media (max-width: 520px) {
+      .doctor-card { flex-direction: column; align-items: flex-start; }
+      .steps::before { left: 21px; }
+      .topbar-name { font-size: 13px; }
+      .form-row { grid-template-columns: 1fr; }
+      .social-bar { gap: 14px; }
+    }
+
+    /* ─── SCROLL REVEAL ───────────────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; }
+      .btn-primary, .btn-primary-lg, .topbar-cta, .fab-zalo { transition: none; }
+      .fab-zalo::before { animation: none; }
+    }
+  </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Bỏ qua điều hướng</a>
+
+<!-- ═══ STICKY NAV ════════════════════════════════════════════════ -->
+<nav class="topbar" aria-label="Điều hướng chính">
+  <span class="topbar-name">BS. Trần Huyền Trang</span>
+  <div class="topbar-right">
+    <a href="tel:0919911593" class="topbar-phone" aria-label="Gọi điện thoại">091 991 1593</a>
+    <a href="#booking" class="topbar-cta">Đặt lịch miễn phí</a>
+  </div>
+</nav>
+
+<!-- ═══ SOCIAL PROOF BAR ══════════════════════════════════════════ -->
+<div class="social-bar" role="region" aria-label="Số liệu thực tế">
+  <div class="social-stat"><strong>10+</strong> năm chuyên khoa</div>
+  <div class="social-stat"><strong>2.000+</strong> ca điều trị</div>
+  <div class="social-stat"><strong>BV Đại học Y</strong> Hà Nội</div>
+</div>
+
+<!-- ═══ HERO ══════════════════════════════════════════════════════ -->
+<section class="hero" id="main-content">
+  <div class="hero-inner">
+
+    <div class="hero-badge">
+      <span></span>
+      Chuyên gia Tĩnh mạch & Tim mạch · BV Đại học Y Hà Nội
+    </div>
+
+    <h1>
+      Chân nặng, đau mỏi,<br>
+      <em>nổi gân xanh?</em>
+    </h1>
+    <p class="hero-sub">
+      Đừng chờ thêm. Bạn xứng đáng biết chính xác tình trạng của mình và bước tiếp theo cần làm gì.
+    </p>
+
+    <div class="trust-pills" role="list">
+      <div class="trust-pill" role="listitem"><span class="check" aria-hidden="true">✔</span> Chuyên sâu Tĩnh mạch & Tim mạch, hơn 10 năm</div>
+      <div class="trust-pill" role="listitem"><span class="check" aria-hidden="true">✔</span> BV Đại học Y Hà Nội & Viện Tim mạch Quốc gia</div>
+      <div class="trust-pill" role="listitem"><span class="check" aria-hidden="true">✔</span> Phác đồ cá nhân hóa, không áp chung</div>
+      <div class="trust-pill" role="listitem"><span class="check" aria-hidden="true">✔</span> Đồng hành sau điều trị, không bỏ giữa chừng</div>
+    </div>
+
+    <div class="hero-cta-wrap">
+      <a href="#booking" class="btn-primary">Đặt lịch tư vấn miễn phí 1:1</a>
+      <span class="hero-note">Miễn phí · Bảo mật · Không ràng buộc</span>
+    </div>
+
+    <div class="doctor-card">
+      <img src="Bshuyentrang.png" alt="Bác sĩ Trần Huyền Trang" width="70" height="70" />
+      <div class="doctor-card-info">
+        <h3>BS. Trần Huyền Trang</h3>
+        <p>
+          Chuyên khoa Bệnh lý Tim & Mạch máu<br>
+          Viện Tim mạch Quốc gia – BV Bạch Mai (2014–2025)<br>
+          BV Đại học Y Hà Nội & PK ABClinic (2015–nay)
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ PROBLEM ═══════════════════════════════════════════════════ -->
+<section class="problem" aria-labelledby="problem-heading">
+  <div class="container">
+
+    <div class="gold-line" aria-hidden="true"></div>
+    <p class="section-label">Vấn đề</p>
+    <h2 id="problem-heading" class="reveal">Hầu hết bệnh nhân đến gặp tôi không phải lần đầu nhận ra vấn đề.</h2>
+
+    <p class="reveal">
+      Họ đến sau nhiều tháng, thậm chí nhiều năm, tự xử lý. Đã thử mang vớ y khoa. Đã uống thực phẩm chức năng. Đã chịu đựng vì nghĩ "chắc không sao."
+    </p>
+    <p class="reveal">
+      Nhưng suy giãn tĩnh mạch không tự khỏi. Mỗi tháng trì hoãn, áp lực trong lòng tĩnh mạch tiếp tục tích lũy, thành mạch tiếp tục suy yếu.
+    </p>
+    <p class="reveal">
+      <strong>Điều tôi thấy nhiều nhất:</strong> Không phải bệnh nhân không muốn điều trị, mà họ không biết mình đang ở giai đoạn nào, không biết liệu có thực sự cần can thiệp chưa.
+    </p>
+
+    <ul class="tried-list reveal" aria-label="Những cách tự xử lý thường gặp">
+      <li><span class="x" aria-hidden="true">✗</span> Mua vớ y khoa tự dùng, không đúng áp lực và cách mang → cải thiện không đáng kể</li>
+      <li><span class="x" aria-hidden="true">✗</span> Uống thực phẩm chức năng theo quảng cáo → không có phác đồ, không theo dõi tiến triển</li>
+      <li><span class="x" aria-hidden="true">✗</span> Chườm lạnh, ngâm chân, gác chân cao → dễ chịu tạm thời, không xử lý được nguyên nhân</li>
+      <li><span class="x" aria-hidden="true">✗</span> Khám ở nơi không chuyên tĩnh mạch, được cho thuốc chung chung, không có siêu âm đánh giá</li>
+    </ul>
+
+    <h3 class="story-heading reveal">Hai ca bệnh tôi không quên</h3>
+    <div class="story-cards">
+      <div class="story-card reveal">
+        <p>
+          <strong>Bác nam 65 tuổi</strong> bị loét chân nhiều năm, đã qua da liễu, đông y, phục hồi chức năng, tốn hàng trăm triệu mà không khỏi, ngày càng nặng hơn. Tình cờ thấy tôi trên mạng, bác tìm đến. Sau can thiệp, vết loét lành, hết đau nhức, hết nặng mỏi.
+        </p>
+      </div>
+      <div class="story-card reveal">
+        <p>
+          <strong>Bác nữ 70 tuổi</strong> đau chân nhiều, có tĩnh mạch mạng nhện vùng đùi. Bệnh viện tuyến trung ương chẩn đoán suy tĩnh mạch, khuyên đốt. Khi tôi thăm khám kỹ, nguyên nhân thật sự là <strong>thoái hóa khớp gối</strong>, không liên quan tĩnh mạch. Một đợt điều trị đúng hướng, bác hết hẳn.
+        </p>
+      </div>
+    </div>
+
+    <div class="callout reveal" role="note">
+      <strong>Cùng triệu chứng, nhưng hai người cần hai hướng xử lý hoàn toàn khác nhau.</strong><br>
+      Đó là lý do mỗi bệnh nhân đến gặp tôi đều được nghe và thăm khám trước, không nhận ngay một phác đồ chung.
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ PROCESS ═══════════════════════════════════════════════════ -->
+<section class="process" aria-labelledby="process-heading">
+  <div class="container">
+
+    <div class="gold-line" aria-hidden="true"></div>
+    <p class="section-label">Quy trình</p>
+    <h2 id="process-heading" class="reveal">Từ buổi đầu tiên đến khi bạn thật sự thấy khác biệt</h2>
+
+    <ol class="steps" aria-label="Quy trình điều trị 4 bước">
+      <li class="step reveal">
+        <div class="step-num" aria-hidden="true">1</div>
+        <div class="step-body">
+          <h3>Tư vấn 1:1 Miễn phí</h3>
+          <p>Lắng nghe toàn bộ triệu chứng, tiền sử, điều bạn lo ngại nhất. Cuối buổi: bạn biết mình cần làm gì tiếp theo, dù là thăm khám sâu hơn hay chỉ thay đổi thói quen sinh hoạt.</p>
+          <span class="tag">Miễn phí 100%</span>
+        </div>
+      </li>
+      <li class="step reveal">
+        <div class="step-num" aria-hidden="true">2</div>
+        <div class="step-body">
+          <h3>Thăm khám & Siêu âm Doppler</h3>
+          <p>Với những trường hợp cần thiết, siêu âm mạch máu chuyên sâu cho bức tranh chính xác để xây dựng phác đồ phù hợp nhất với bạn.</p>
+        </div>
+      </li>
+      <li class="step reveal">
+        <div class="step-num" aria-hidden="true">3</div>
+        <div class="step-body">
+          <h3>Điều trị cá nhân hóa</h3>
+          <p>Tùy tình trạng: điều trị nội khoa (thuốc + vớ áp lực đúng cách + bài tập) hoặc can thiệp (tiêm xơ, laser, sóng cao tần, bơm keo sinh học).</p>
+          <span class="tag">Ít đau · Xâm lấn tối thiểu · Về nhà trong ngày</span>
+        </div>
+      </li>
+      <li class="step reveal">
+        <div class="step-num" aria-hidden="true">4</div>
+        <div class="step-body">
+          <h3>Theo dõi sau điều trị</h3>
+          <p>Lịch tái khám cá nhân hóa. Hướng dẫn sinh hoạt phù hợp. Có thể liên hệ trực tiếp khi có thắc mắc, không cần chờ đến lịch hẹn.</p>
+        </div>
+      </li>
+    </ol>
+
+  </div>
+</section>
+
+<!-- ═══ EVIDENCE ══════════════════════════════════════════════════ -->
+<section class="evidence" aria-labelledby="evidence-heading">
+  <div class="container">
+
+    <div class="gold-line" aria-hidden="true"></div>
+    <p class="section-label">Bằng chứng thực tế</p>
+    <h2 id="evidence-heading" class="reveal">Những bệnh nhân đã đi qua hành trình này</h2>
+
+    <div class="cases">
+
+      <article class="case-card reveal">
+        <div class="case-images">
+          <div class="case-img-wrap">
+            <img src="truoc1.png" alt="Chân bệnh nhân Vũ Thị Châu Liên trước điều trị, tĩnh mạch giãn rõ" loading="lazy" width="390" height="520" />
+            <span class="img-label" aria-hidden="true">Trước</span>
+          </div>
+          <div class="case-img-wrap">
+            <img src="sau1.png" alt="Chân bệnh nhân Vũ Thị Châu Liên sau điều trị, tĩnh mạch đã xử lý" loading="lazy" width="390" height="520" />
+            <span class="img-label after" aria-hidden="true">Sau</span>
+          </div>
+        </div>
+        <div class="case-body">
+          <img src="calamsang1.jpg" alt="Vũ Thị Châu Liên" class="case-portrait" loading="lazy">
+          <div class="case-name">Vũ Thị Châu Liên</div>
+          <div class="case-role">Giáo viên nghỉ hưu · Hải Phòng</div>
+          <p>Đứng bục giảng 6–8 giờ/ngày suốt 20 năm, chịu đựng chân đau mỏi vì nghĩ là "bệnh nghề nghiệp, không chữa được." Đến khi nghỉ hưu mới đi khám và được can thiệp sóng cao tần.</p>
+          <blockquote class="case-quote">"Chân nhẹ bẫng. Tôi ước mình biết điều này sớm hơn 20 năm."</blockquote>
+        </div>
+      </article>
+
+      <article class="case-card reveal">
+        <div class="case-images">
+          <div class="case-img-wrap">
+            <img src="truoc2.png" alt="Chân bệnh nhân Bùi Văn Nam trước điều trị laser tĩnh mạch" loading="lazy" width="390" height="520" />
+            <span class="img-label" aria-hidden="true">Trước</span>
+          </div>
+          <div class="case-img-wrap">
+            <img src="sau2.jpg" alt="Chân bệnh nhân Bùi Văn Nam sau điều trị laser tĩnh mạch" loading="lazy" width="390" height="520" />
+            <span class="img-label after" aria-hidden="true">Sau</span>
+          </div>
+        </div>
+        <div class="case-body">
+          <div class="case-name">Bùi Văn Nam</div>
+          <div class="case-role">Công nhân xuất khẩu lao động · Đài Loan (quê Hà Tĩnh)</div>
+          <p>Đứng làm việc 8–10 giờ/ngày. Sau can thiệp laser tĩnh mạch hiển lớn hai bên: hết mỏi nặng, hết phù chân, hết búi giãn.</p>
+        </div>
+      </article>
+
+      <article class="case-card reveal">
+        <div class="case-images">
+          <div class="case-img-wrap">
+            <img src="truoc3.jpg" alt="Chân bệnh nhân Nguyễn Thị Thu Hương trước bơm keo sinh học" loading="lazy" width="390" height="520" />
+            <span class="img-label" aria-hidden="true">Trước</span>
+          </div>
+          <div class="case-img-wrap">
+            <img src="sau3.jpeg" alt="Chân bệnh nhân Nguyễn Thị Thu Hương sau bơm keo sinh học" loading="lazy" width="390" height="520" />
+            <span class="img-label after" aria-hidden="true">Sau</span>
+          </div>
+        </div>
+        <div class="case-body">
+          <img src="calamsang3.jpg" alt="Nguyễn Thị Thu Hương" class="case-portrait" loading="lazy">
+          <div class="case-name">Nguyễn Thị Thu Hương</div>
+          <div class="case-role">Chủ doanh nghiệp · Bắc Ninh</div>
+          <p>5 năm điều trị nội khoa cùng BS. Huyền Trang. Khi chân không còn đáp ứng điều trị bảo tồn, chuyển sang bơm keo sinh học, không đau, không cần đi tất sau can thiệp.</p>
+          <blockquote class="case-quote">Giờ tự tin đi giày cao gót tiếp khách mà không lo triệu chứng làm phiền.</blockquote>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══════════════════════════════════════════════════════ -->
+<section class="faq" aria-labelledby="faq-heading">
+  <div class="container">
+
+    <div class="gold-line" aria-hidden="true"></div>
+    <p class="section-label">Câu hỏi thường gặp</p>
+    <h2 id="faq-heading" class="reveal">Những điều bạn đang thắc mắc</h2>
+
+    <div class="faq-list reveal" role="list">
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-1">
+          Điều trị bảo tồn có khỏi hẳn không?
+          <span class="arrow" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-a" id="faq-a-1" role="region">
+          <div class="faq-a-inner">
+            <p>Phương pháp bảo tồn (thuốc + vớ) không loại bỏ tĩnh mạch giãn, nhưng giảm triệu chứng rõ rệt, ngăn bệnh tiến triển và phòng biến chứng.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-2">
+          Can thiệp có đau không?
+          <span class="arrow" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-a" id="faq-a-2" role="region">
+          <div class="faq-a-inner">
+            <p>Hầu hết bệnh nhân mô tả cảm giác nhẹ hơn nhiều so với tưởng tượng. Bác sĩ giải thích cụ thể trước mỗi thủ thuật để bạn hoàn toàn chủ động.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-3">
+          Cần nghỉ làm sau can thiệp không?
+          <span class="arrow" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-a" id="faq-a-3" role="region">
+          <div class="faq-a-inner">
+            <p>Công việc thông thường: có thể đi làm lại ngay hôm sau. Công việc nặng hoặc môi trường nhiều bụi: nghỉ thêm vài ngày.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-4">
+          Tỷ lệ tái phát sau điều trị?
+          <span class="arrow" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-a" id="faq-a-4" role="region">
+          <div class="faq-a-inner">
+            <p>Với laser hoặc bơm keo, sau 5–7 năm khoảng 1/10 người tái phát, và thường nhẹ hơn lần đầu nhiều.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-5">
+          Chi phí khoảng bao nhiêu?
+          <span class="arrow" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-a" id="faq-a-5" role="region">
+          <div class="faq-a-inner">
+            <p>Tùy tình trạng sau thăm khám và siêu âm. Bác sĩ trao đổi rõ trước khi bắt đầu bất kỳ bước nào, không có phí phát sinh ngoài dự kiến.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-6">
+          Ở tỉnh khác, tư vấn online được không?
+          <span class="arrow" aria-hidden="true">▾</span>
+        </button>
+        <div class="faq-a" id="faq-a-6" role="region">
+          <div class="faq-a-inner">
+            <p>Được. Buổi đầu có thể tư vấn qua điện thoại để bạn nắm rõ tình trạng trước khi quyết định lên Hà Nội khám trực tiếp.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BOOKING FORM ══════════════════════════════════════════════ -->
+<section class="booking" id="booking" aria-labelledby="booking-heading">
+  <div class="container">
+
+    <div class="gold-line" aria-hidden="true"></div>
+    <p class="section-label">Đặt lịch</p>
+    <h2 id="booking-heading" class="reveal">Đặt lịch tư vấn miễn phí 1:1</h2>
+    <p class="booking-sub reveal">Điền thông tin bên dưới. BS. Huyền Trang sẽ liên hệ lại trong vòng 24 giờ để xác nhận lịch hẹn.</p>
+
+    <form class="booking-form reveal" id="booking-form" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="f-name">Họ và tên <span class="req" aria-label="bắt buộc">*</span></label>
+          <input type="text" id="f-name" name="name" placeholder="Nguyễn Văn An" required autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <label for="f-phone">Số điện thoại <span class="req" aria-label="bắt buộc">*</span></label>
+          <input type="tel" id="f-phone" name="phone" placeholder="09x xxx xxxx" required autocomplete="tel" inputmode="tel" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="f-age">Tuổi</label>
+          <input type="number" id="f-age" name="age" placeholder="45" min="1" max="120" inputmode="numeric" />
+        </div>
+        <div class="form-group">
+          <label for="f-form">Hình thức tư vấn <span class="req" aria-label="bắt buộc">*</span></label>
+          <select id="f-form" name="form" required>
+            <option value="" disabled selected>Chọn hình thức</option>
+            <option value="phone">Điện thoại</option>
+            <option value="zalo">Zalo</option>
+            <option value="clinic">Trực tiếp tại phòng khám</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="f-symptoms">Triệu chứng chính bạn đang gặp <span class="req" aria-label="bắt buộc">*</span></label>
+        <textarea id="f-symptoms" name="symptoms" placeholder="Ví dụ: chân nặng mỏi về chiều, nổi gân xanh ở bắp chân, đau nhức..." required></textarea>
+      </div>
+
+      <p class="form-note">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <circle cx="8" cy="8" r="7.5" stroke="#5A5A5A"/>
+          <path d="M8 7v4M8 5h.01" stroke="#5A5A5A" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        Thông tin được bảo mật theo tiêu chuẩn y khoa. Không dùng cho mục đích khác.
+      </p>
+
+      <button type="submit" class="btn-submit" id="submit-btn">
+        <span id="submit-label">Gửi yêu cầu tư vấn</span>
+        <span id="submit-spinner" style="display:none" aria-hidden="true">Đang gửi…</span>
+      </button>
+    </form>
+
+  </div>
+</section>
+
+<!-- ═══ CTA FINAL ══════════════════════════════════════════════════ -->
+<section class="cta-section" id="cta" aria-labelledby="cta-heading">
+
+  <h2 id="cta-heading">Một buổi tư vấn hôm nay. Để bạn không còn phải đoán mò về sức khỏe của chính mình.</h2>
+
+  <div class="commitments" role="list">
+    <div class="commitment" role="listitem"><span class="check" aria-hidden="true">✔</span> Hoàn toàn miễn phí</div>
+    <div class="commitment" role="listitem"><span class="check" aria-hidden="true">✔</span> Bảo mật theo tiêu chuẩn y khoa</div>
+    <div class="commitment" role="listitem"><span class="check" aria-hidden="true">✔</span> Không ràng buộc sau tư vấn</div>
+  </div>
+
+  <div class="contact-grid" role="list">
+    <div class="contact-item" role="listitem">
+      <div class="icon" aria-hidden="true">📞</div>
+      <div>
+        <div class="contact-item-label">Hotline</div>
+        <a class="contact-item-val" href="tel:0919911593" aria-label="Gọi 091 991 1593">091 991 1593</a>
+      </div>
+    </div>
+    <div class="contact-item" role="listitem">
+      <div class="icon" aria-hidden="true">📧</div>
+      <div>
+        <div class="contact-item-label">Email</div>
+        <a class="contact-item-val" href="mailto:trangkien07@gmail.com">trangkien07@gmail.com</a>
+      </div>
+    </div>
+    <div class="contact-item" role="listitem">
+      <div class="icon" aria-hidden="true">📍</div>
+      <div>
+        <div class="contact-item-label">Địa chỉ</div>
+        <div class="contact-item-val">PK ABClinic, 159B Lê Thanh Nghị</div>
+      </div>
+    </div>
+    <div class="contact-item" role="listitem">
+      <div class="icon" aria-hidden="true">🕔</div>
+      <div>
+        <div class="contact-item-label">Lịch khám</div>
+        <div class="contact-item-val">17h các ngày · T3 & T6 tại BV ĐHY</div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ═══ FLOATING ZALO ══════════════════════════════════════════════ -->
+<a href="https://zalo.me/0919911593" class="fab-zalo" aria-label="Nhắn tin qua Zalo: 091 991 1593" target="_blank" rel="noopener noreferrer">
+  <!-- Inline Zalo Z icon as SVG để tránh external request -->
+  <svg width="22" height="22" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+    <rect width="40" height="40" rx="10" fill="#fff"/>
+    <path d="M8 28.5C8 28.5 9.5 24 9 20C8.5 16 11 11.5 17 10C23 8.5 29 11 31 16C33 21 30.5 27 25 29C22 30.2 18 30 16 29L8 31.5L8 28.5Z" fill="#0068FF"/>
+    <text x="20" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff" font-family="Arial">Z</text>
+  </svg>
+  Nhắn Zalo ngay
+</a>
+
+<!-- ═══ SCRIPTS ═══════════════════════════════════════════════════ -->
+<script>
+  // ── FAQ accordion ──────────────────────────────────────────────
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // ── Scroll reveal ───────────────────────────────────────────────
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // ── Booking form — client-side validation & submit ─────────────
+  const form = document.getElementById('booking-form');
+  const submitBtn = document.getElementById('submit-btn');
+  const submitLabel = document.getElementById('submit-label');
+  const submitSpinner = document.getElementById('submit-spinner');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Basic validation
+    const name = form.elements['name'].value.trim();
+    const phone = form.elements['phone'].value.trim();
+    const symptoms = form.elements['symptoms'].value.trim();
+    const formType = form.elements['form'].value;
+
+    if (!name || !phone || !symptoms || !formType) {
+      alert('Vui lòng điền đầy đủ các trường bắt buộc (*).');
+      return;
+    }
+
+    // Phone: basic VN format check
+    if (!/^(0|\+84)[0-9]{8,10}$/.test(phone.replace(/\s/g, ''))) {
+      alert('Số điện thoại không hợp lệ. Vui lòng nhập số điện thoại Việt Nam.');
+      form.elements['phone'].focus();
+      return;
+    }
+
+    // Loading state
+    submitBtn.disabled = true;
+    submitLabel.style.display = 'none';
+    submitSpinner.style.display = 'inline';
+
+    try {
+      /*
+        TODO: Thay thế đoạn này bằng API call thực tế, ví dụ:
+        await fetch('/api/booking', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, phone, symptoms, formType,
+                                 age: form.elements['age'].value })
+        });
+
+        Hiện tại: giả lập delay 1 giây để demo UX.
+      */
+      await new Promise(r => setTimeout(r, 1000));
+
+      window.location.href = 'thank-you.html';
+    } catch {
+      alert('Có lỗi xảy ra. Vui lòng thử lại hoặc liên hệ trực tiếp qua số 091 991 1593.');
+      submitBtn.disabled = false;
+      submitLabel.style.display = 'inline';
+      submitSpinner.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>
